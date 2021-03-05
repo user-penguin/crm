@@ -1,5 +1,20 @@
 {% extends "header-footer-base.html.twig" %}
 {% block body %}
-    {{ parent() }}
-    Hello
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+
+
+    {% block content %}
+        Hello
+    {% endblock %}
+
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block downscripts %}
+        {{ parent() }}
+    {% endblock %}
 {% endblock %}
